@@ -1,0 +1,19 @@
+people:
+- name: Matt
+  fav_color: Blue
+- name: Dave
+  fav_color: Red
+colors:
+  - name: Blue
+    things:
+      - Sky
+      - Sea
+  - name: Yellow
+    things:
+       - Egg yolk
+       - Taxi
+  - name: Red
+    things:
+       - Stop Sign
+       - Rose
+

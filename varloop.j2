@@ -1,0 +1,15 @@
+{% for color in colors %}
+Color number {{ loop.index }} is {{ color.name }}.
+{% set color_count = 0 %}
+{% for person in people if person.fav_color == color.name %}
+{% set color_count = color_count + 1 %}
+
+Currently {{ color_count }} people call {{ color.name }} their favorite.
+And the following are examples of things that are {{ color.name }}:
+{% for item in color.things %}
+- {{ item }}
+{% endfor %}
+{% endfor %}
+
+{% endfor %}
+

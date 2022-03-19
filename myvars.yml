@@ -1,0 +1,8 @@
+usr1: Zack
+usr2: Cody
+usr3: Maddie
+usr4: London
+u1pwd: "{{ 'user1pass' | password_hash('sha512') }}"
+u2pwd: "{{ 'user2pass' | password_hash('sha512') }}"
+u3pwd: "{{ 'user3pass' | password_hash('sha512') }}"
+u4pwd: "{{ 'user4pass' | password_hash('sha512') }}"

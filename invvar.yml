@@ -1,0 +1,20 @@
+- name: User Account Managment
+  hosts: all
+  become: true
+  vars_files:
+          - myvars.yml
+  tasks:
+          - name: Adding Group
+            group: 
+                name: simpli
+                state: present
+          - name: Adding "{{usr1}}"
+            user: 
+                name: "{{usr1}}"
+                state: present
+                groups: simpli
+                password: "{{u1pwd}}"
+          - name: Adding Software
+            apt:
+                name: "{{sw}}"
+                state: "{{state}}"

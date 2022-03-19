@@ -1,0 +1,16 @@
+Color number 1 is Blue.
+
+Currently 1 people call Blue their favorite.
+And the following are examples of things that are Blue:
+- Sky
+- Sea
+
+Color number 2 is Yellow.
+
+Color number 3 is Red.
+
+Currently 1 people call Red their favorite.
+And the following are examples of things that are Red:
+- Stop Sign
+- Rose
+

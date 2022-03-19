@@ -1,0 +1,28 @@
+- name: Adding Group With Users
+  hosts: all
+  become: true
+  vars_files:
+          - myvars.yml
+  tasks:
+          - name: Adding Group
+            group: 
+                name: simpli
+                state: present
+          - name: Adding "{{usr1}}"
+            user: 
+                name: "{{usr1}}"
+                state: present
+                groups: simpli
+                password: "{{u1pwd }}"
+          - name: Adding "{{usr2}}"
+            user:
+               name: "{{usr2}}"
+               state: present
+               groups: simpli
+               password: "{{u2pwd}}" 
+          - name: Adding "{{usr3}}"
+            user:
+                name: "{{usr3}}"
+                state: present
+                groups: simpli
+                password: "{{u3pwd}}"

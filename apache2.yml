@@ -1,0 +1,22 @@
+- name: Installing apache2
+  hosts: all
+  become: true
+  tasks:
+          - name: Installing apache2
+            apt: 
+                name: apache2
+                state: latest
+          - name: Installing TelNet
+            apt: 
+                name: telnet
+                state: latest
+          - name: lineinfile test
+            lineinfile:
+               path: /var/www/html/index.html
+               regex: "^Learning"
+               line: " "
+          - name: restarting apache2 service
+            service:
+                name: apache2
+                state: restarted
+         

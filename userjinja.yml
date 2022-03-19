@@ -1,0 +1,11 @@
+---
+- name: learning jinja2
+  hosts: all
+  become: true
+  vars:
+          usernames: ['Matt', 'Austin', 'Hunter', 'David', 'Travis']
+  tasks:
+          - name: adding data to host
+            template:
+                  src: users.j2
+                  dest: /tmp/myusers.txt

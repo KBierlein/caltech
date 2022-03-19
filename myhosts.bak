@@ -1,0 +1,16 @@
+[prod]
+localhost
+[dev]
+172.31.33.33
+172.31.43.29
+[allgroups:children]
+dev
+prod
+[dev:vars]
+sw=apache2
+state=latest
+usr1=MrMoseby
+[prod:vars]
+sw=telnet
+state=latest
+usr1=Esteban
