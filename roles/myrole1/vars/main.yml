@@ -1,0 +1,5 @@
+---
+# vars file for myrole1
+deb_package: apache2
+rpm_package: httpd
+

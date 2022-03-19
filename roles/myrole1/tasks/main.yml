@@ -1,0 +1,18 @@
+---
+# tasks file for myrole1
+- name: install apache2
+  apt:
+    name: apache2
+    state: latest
+- name: start service
+  service:
+    name: apache2
+    state: started
+    enabled: true
+- name: copy template
+  template:
+    src: index.j2
+    dest: /var/www/html
+  notify:
+    - restart httpd
+
