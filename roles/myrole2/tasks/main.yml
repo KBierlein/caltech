@@ -1,0 +1,7 @@
+---
+# tasks file for myrole2
+- name: adding user from role2
+  user:
+          name: myuser13
+          state: "{{ mystate }}"
+

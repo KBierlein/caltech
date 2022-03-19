@@ -1,0 +1,13 @@
+- name: learning how roles work
+  hosts: localhost
+  become: true 
+  pre_tasks:
+          - debug:
+                  msg: "learning pretask in roles"
+  roles:
+          - myrole1
+          - myrole2 
+  post_tasks:
+          - debug:
+                  msg: "Learning post tasks"
+
