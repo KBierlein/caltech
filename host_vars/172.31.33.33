@@ -1,0 +1,4 @@
+usr1: myuser2
+mystate: present
+pkg: apache2
+
