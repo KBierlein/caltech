@@ -1,0 +1,12 @@
+- name: learning playbook
+  hosts: localhost
+  become: true
+  vars:
+          mypackage: apache2
+  tasks: 
+    - name: install 
+      apt:
+              name: "{{ mypackage }}"
+              state: latest
+      failed_when: mypackage == "apache2"
+

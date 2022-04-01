@@ -1,0 +1,10 @@
+- name: learning docker
+  hosts: localhost
+  become: true
+  #  connection: docker
+  tasks:
+  - name: run container
+    docker_container: 
+      name: notmaestro
+      image: httpd
+

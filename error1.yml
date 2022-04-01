@@ -1,0 +1,20 @@
+- name: learning playbook
+  hosts: localhost
+  become: true
+  vars:
+          mypackage: apachee2
+  tasks: 
+    - name: install 
+      apt:
+              name: "{{ mypackage }}"
+              state: latest
+      ignore_errors: yes
+    - name: getting user added
+      user:
+              name: myuser1
+              state: present
+    - name: adding groups
+      group:
+              name: mygroup1
+              state: present
+

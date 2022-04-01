@@ -1,6 +1,7 @@
-[prod]
 localhost
-3.82.146.221 ansible_user=ec2-user
-[dev]
-172.31.33.33
-172.31.43.29
+# [prod]
+# localhost
+# 3.82.146.221 ansible_user=ec2-user
+# [dev]
+# 172.31.33.33
+# 172.31.43.29
